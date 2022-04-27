@@ -9635,24 +9635,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\apoolakkal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\kparambath\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mobizone\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "D:\\mobizone\\WebApp\\WebApp.csproj",
-      "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-      "outputPath": "D:\\mobizone\\WebApp\\obj\\",
+      "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\WebApp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\kparambath\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\kparambath\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9666,8 +9661,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\mobizone\\ProductCatalog.API\\ProductCatalog.API.csproj": {
-              "projectPath": "D:\\mobizone\\ProductCatalog.API\\ProductCatalog.API.csproj"
+            "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.API\\ProductCatalog.API.csproj": {
+              "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.API\\ProductCatalog.API.csproj"
             }
           }
         }
@@ -9761,7 +9756,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

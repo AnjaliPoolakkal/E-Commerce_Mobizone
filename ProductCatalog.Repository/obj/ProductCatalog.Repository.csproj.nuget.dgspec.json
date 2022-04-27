@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {}
+    "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {}
   },
   "projects": {
-    "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+    "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
         "projectName": "ProductCatalog.Domain",
-        "projectPath": "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
-        "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "D:\\mobizone\\ProductCatalog.Domain\\obj\\",
+        "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+        "packagesPath": "C:\\Users\\kparambath\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\kparambath\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,25 +100,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+    "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
         "projectName": "ProductCatalog.Repository",
-        "projectPath": "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
-        "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "D:\\mobizone\\ProductCatalog.Repository\\obj\\",
+        "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
+        "packagesPath": "C:\\Users\\kparambath\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\kparambath\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,8 +128,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
-                "projectPath": "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
+              "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
               }
             }
           }
@@ -212,7 +204,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
