@@ -55,7 +55,7 @@ namespace ProductCatalog.Domain.Customers
         [Required]
         public string ModifiedBy { get; set; }
 
-        //navigatation 
+        
         public virtual ICollection<UserAddress> UserAddresses { get; set; }
         public virtual ICollection<Cart.CartItem> CartItems { get; set; }
         public virtual ICollection<Order.OrderDetails> OrderDetails { get; set; }
