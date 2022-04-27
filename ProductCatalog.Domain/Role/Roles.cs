@@ -11,29 +11,29 @@ namespace ProductCatalog.Domain.Role
     public class Roles
     {
         [Key]
-        [Column("id", Order = 0)]
+        [Column("Id", Order = 0)]
         [Required]
         public int Id { get; set; }
 
-        [Column("roles", Order = 1)]
+        [Column("Roles", Order = 1)]
         [Required]
         public string UserRole { get; set; }
 
-        [Column("user_id", Order = 2)]
+        [Column("UserId", Order = 2)]
         [Required]
         public int UserId { get; set; }
         public virtual Customers.User User { get; set; }
 
-        [Column("created_at_utc", Order = 3)]
+        [Column("CreatedDateUtc", Order = 3)]
         public DateTime CreatedAtUTC { get; set; }
 
-        [Column("modified_at_utc", Order = 4)]
+        [Column("UpdatedDateUtc", Order = 4)]
         public DateTime ModifiedAtUTC { get; set; }
 
-        [Column("created_by", Order = 5)]
+        [Column("CreatedBy", Order = 5)]
         public DateTime CreatedBy { get; set; }
 
-        [Column("modified_by", Order = 6)]
+        [Column("UpdatedBy", Order = 6)]
         public DateTime ModifiedBy { get; set; }
 
 

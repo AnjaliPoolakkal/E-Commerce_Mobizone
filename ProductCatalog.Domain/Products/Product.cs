@@ -11,50 +11,50 @@ namespace ProductCatalog.Domain.Products
     public class Product
     {
         [Key]
-        [Column("id",Order = 0)]
+        [Column("Id",Order = 0)]
         public int Id { get; set; }
 
-        [Column("name",Order = 1, TypeName = "Varchar(50)")]
+        [Column("Name",Order = 1, TypeName = "Varchar(50)")]
         [Required]
         public string Name { get; set; }
 
-        [Column("specification_id",Order = 2)]
+        [Column("SpecificationId",Order = 2)]
         [ForeignKey("Specification")]
         public int SpecificationId { get; set; }
         public Specification Specification { get; set; }
 
-        [Column("price",Order = 3)]
+        [Column("Price",Order = 3,TypeName ="Decimal(12,3)")]
         [Required]
         public decimal Price { get; set; }
 
 
 
-        [Column("available_stock",Order = 4)]
+        [Column("AvailableStock",Order = 4)]
         [Required]
         public int AvailableStock { get; set; }
 
-        [Column("is_active",Order = 5, TypeName = "Varchar(50)")]
+        [Column("IsActive",Order = 5, TypeName = "Varchar(50)")]
         [Required]
         public string IsActive { get; set; }
 
 
-        [Column("created_on_utc",Order = 6)]
+        [Column("createdDateUtc",Order = 6)]
         [Required]
         public DateTime CreatedOnUTC { get; set; }
 
-        [Column("modified_on_utc",Order = 7)]
+        [Column("UpdatedDateUtc", Order = 7)]
         [Required]
         public DateTime ModifiedOnUTC { get; set; }
 
-        [Column("deleted_on_utc", Order = 8)]
+        [Column("DeletedByUtc", Order = 8)]
         [Required]
         public DateTime DeletedOnUTC { get; set; }
 
-        [Column("created_by",Order = 9)]
+        [Column("CreatedBy",Order = 9)]
         [Required]
         public DateTime CreatedBy { get; set; }
 
-        [Column("modified_by",Order = 10)]
+        [Column("UpdatedBy", Order = 10)]
         [Required]
         public DateTime ModifiedBy { get; set; }
 

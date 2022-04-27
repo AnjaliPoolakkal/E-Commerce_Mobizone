@@ -11,34 +11,34 @@ namespace ProductCatalog.Domain.Order
     public class PaymentDetails
     {
         [Key]
-        [Column("id", Order = 0)]
+        [Column("Id", Order = 0)]
         [Required]
         public int Id { get; set; }
 
 
-        [Column("amount", Order = 1)]
+        [Column("Amount", Order = 1,TypeName ="Decimal(12,3)")]
         [Required]
         public int Amount { get; set; }
 
-        [Column("payment_status", Order = 2)]
+        [Column("PaymentStatus", Order = 2)]
         [Required]
         public string PaymentStatus { get; set; }
 
-        [Column("order_id", Order = 3)]
+        [Column("OrderId", Order = 3)]
         [Required]
         public int OrderId { get; set; }
         public virtual CatalogOrder CatalogOrder { get; set; }
 
-        [Column("created_at_utc", Order = 4)]
+        [Column("CreatedDateUtc", Order = 4)]
         public DateTime CreatedAtUTC { get; set; }
 
-        [Column("modified_at_utc", Order = 5)]
+        [Column("ModifiedDateUtc", Order = 5)]
         public DateTime ModifiedAtUTC { get; set; }
 
-        [Column("created_by", Order = 6)]
+        [Column("CreatedBy", Order = 6)]
         public DateTime CreatedBy { get; set; }
 
-        [Column("modified_by", Order = 7)]
+        [Column("ModifiedBy", Order = 7)]
         public DateTime ModifiedBy { get; set; }
     }
 }
