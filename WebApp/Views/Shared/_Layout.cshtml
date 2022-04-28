@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/SideBar.css" />
+    <link rel="stylesheet" href="~/css/footer.css" />
     <link rel="stylesheet" href="~/css/navigation-bar.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/css\bootstrap.css" rel="stylesheet" />
@@ -20,11 +21,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" asp-action="Index">MOBIZONE</a>
 
-            <!-- The form -->
-            @*<form class="example" action="action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>*@
+
 
             <div>
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -38,6 +35,7 @@
         </div>
     </nav>
 
+   
     <div class="content ">
         <div class="container-fluid">
             <main role="main" class="pb-3">
@@ -46,12 +44,42 @@
         </div>
     </div>
 
-</body>
-</html>
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2022 - WebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+   <footer class="border-top footer text-muted">
+    <div class="text-center">
+       
+        <li class="about">
+            <a asp-controller="Admin" asp-action="About" style="margin-right:-86px">About</a>
+        </li>
+
+        <li class="about">
+            <a asp-controller="Admin" asp-action="Privacy" style="margin-right:-86px">Privacy Policy</a>
+        </li>
+
+        <li class="about">
+
+            <a asp-controller="Admin" asp-action="Contact" style="margin-right:-86px">Contact</a>
+
+        </li>
     </div>
+
+
+
+    <li>
+        <img src="~/Images/logo.png" alt="Mobizone" />
+
+    </li>
+
+
+
+    <hr><div class="text-center">
+        <li>
+            <img src="~/Images/copyright.png" alt="Mobizone" style="height:18px; width:18px;" />
+            <a href=#> Mobizone private limited all right reserved</a>
+        </li>
+    </div>
+       
+    </ul>
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -60,5 +88,7 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 @await Component.InvokeAsync("Notyf")
 @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
 
 
