@@ -14,7 +14,8 @@ namespace ProductCatalog.BusinessObject
         public static void Initialize(IServiceCollection services)
         {
             services.AddTransient<ICatalogLookUpRepository, CatalogLookUpRepository>();
-            
+            services.AddTransient<ICatalogProductRepository, CatalogProductRepository>();
+            services.AddTransient<ICatalogProductBO, CatalogProductBO>();
         }
     }
 }
