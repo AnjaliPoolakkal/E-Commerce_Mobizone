@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using ProductCatalog.BusinessObject.Admin;
 using ProductCatalog.EFRepository;
 using ProductCatalog.Repository;
 using System;
@@ -16,6 +17,8 @@ namespace ProductCatalog.BusinessObject
             services.AddTransient<ICatalogLookUpRepository, CatalogLookUpRepository>();
             services.AddTransient<ICatalogProductRepository, CatalogProductRepository>();
             services.AddTransient<ICatalogProductBO, CatalogProductBO>();
+            services.AddTransient<ICatalogUserBO, CatalogUserBO>();
+            services.AddTransient<ICatalogUserRepository, CatalogUserRepository>();
         }
     }
 }

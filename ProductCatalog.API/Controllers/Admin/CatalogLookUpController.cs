@@ -34,7 +34,7 @@ namespace ProductCatalog.API.Controllers
         [HttpPost]
         public async Task<ActionResult<LookUp>> post(LookUp lookUp)
         {
-                lookUp.CreatedOnUTC = DateTime.UtcNow;
+                //lookUp.CreatedOnUTC = DateTime.UtcNow;
                 var item = await catalogLookUpBO.Add(lookUp);
                 
                 if (item.name == null)

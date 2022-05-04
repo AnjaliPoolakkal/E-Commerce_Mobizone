@@ -9,9 +9,9 @@ namespace ProductCatalog.Domain.DataBase
         public DbSet<ProductCatalog.Domain.Products.Image> Images{ get; set;}
         public DbSet<ProductCatalog.Domain.Products.Specification> Specifications { get; set; }
         public DbSet<ProductCatalog.Domain.Customers.User> User { get; set; }
-        public DbSet<ProductCatalog.Domain.Customers.UserAddress> UserAddress { get; set; }
+        public DbSet<ProductCatalog.Domain.Customers.UserDetails> UserDetails { get; set; }
 
-        public DbSet<ProductCatalog.Domain.Customers.UserLocation> UserLocation { get; set; }
+        
 
         public DbSet<ProductCatalog.Domain.Role.Roles> Role { get; set; }
 

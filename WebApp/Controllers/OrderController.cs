@@ -7,23 +7,18 @@ using WebApp.Services;
 
 namespace WebApp.Controllers
 {
-    public class UserController : Controller
+    public class OrderController : Controller
     {
+        private readonly Services.IOrderService catalogService;
 
-        private readonly IUserService catalogService;
-
-        public UserController(IUserService catalogService)
+        public OrderController(IOrderService catalogService)
         {
             this.catalogService = catalogService;
         }
-
-        public async Task<IActionResult> UserData()
+        public async Task<IActionResult> Index()
         {
-            var items = await catalogService.GetUserItemsAsync();
+            var items = await catalogService.GetCatalogOrder();
             return View(items);
         }
-          
-           
     }
-    }
-
+}

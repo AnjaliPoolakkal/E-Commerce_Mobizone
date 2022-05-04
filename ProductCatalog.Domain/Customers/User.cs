@@ -23,40 +23,28 @@ namespace ProductCatalog.Domain.Customers
         [Required]
         public string Password { get; set; }
 
-        [Column("FirstName", Order = 3, TypeName = "Varchar(50)")]
+        [Column("ForgotToken", Order = 3)]
         [Required]
-        public string FirstName { get; set; }
+        public string ForgotToken { get; set; }
 
-        [Column("LastName", Order = 4, TypeName = "Varchar(50)")]
-        [Required]
-        public string LastName { get; set; }
-
-        [Column("Email", Order = 5, TypeName = "Varchar(100)")]
-        [Required]
-        public string Email { get; set; }
-
-        [Column("Contact", Order = 6, TypeName = "bigInt")]
-        [Required]
-        public long Contact { get; set; }
-
-        [Column("CreatedDateUtc", Order = 7)]
+        [Column("CreatedDateUtc", Order = 4)]
         [Required]
         public DateTime CreatedOnUTC { get; set; }
 
-        [Column("UpdatedDateUtc", Order = 8)]
+        [Column("UpdatedDateUtc", Order = 5)]
         [Required]
         public DateTime ModifiedOnUTC { get; set; }
 
-        [Column("CreatedBy", Order = 9)]
+        [Column("CreatedBy", Order = 6)]
         [Required]
         public string CreatedBy { get; set; }
 
-        [Column("UpdatedBy", Order = 10)]
+        [Column("UpdatedBy", Order = 7)]
         [Required]
         public string ModifiedBy { get; set; }
 
         
-        public virtual ICollection<UserAddress> UserAddresses { get; set; }
+       
         public virtual ICollection<Cart.CartItem> CartItems { get; set; }
         public virtual ICollection<Order.OrderDetails> OrderDetails { get; set; }
     }
