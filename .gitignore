@@ -1,0 +1,7 @@
+bin
+/ProductCatalog.API/bin
+/ProductCatalog.BusinessObject/bin
+/ProductCatalog.Domain/bin
+/ProductCatalog.EFRepository/bin
+/ProductCatalog.Repository/bin
+/ProductCatalog.API/obj
