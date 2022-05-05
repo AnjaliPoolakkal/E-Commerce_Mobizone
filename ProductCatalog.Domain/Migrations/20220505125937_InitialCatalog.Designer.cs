@@ -10,7 +10,7 @@ using ProductCatalog.Domain.DataBase;
 namespace ProductCatalog.Domain.Migrations
 {
     [DbContext(typeof(CatalogDBContext))]
-    [Migration("20220505104817_InitialCatalog")]
+    [Migration("20220505125937_InitialCatalog")]
     partial class InitialCatalog
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -144,7 +144,13 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnType("Varchar(50)")
                         .HasColumnName("LastName");
 
+                    b.Property<int>("UserDetailsId")
+                        .HasColumnType("int")
+                        .HasColumnName("UserDetailsId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserDetailsId");
 
                     b.ToTable("UserDetails");
                 });
@@ -633,6 +639,17 @@ namespace ProductCatalog.Domain.Migrations
                     b.Navigation("LookUp");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ProductCatalog.Domain.Customers.UserDetails", b =>
+                {
+                    b.HasOne("ProductCatalog.Domain.Customers.User", "UserDetail")
+                        .WithMany()
+                        .HasForeignKey("UserDetailsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("UserDetail");
                 });
 
             modelBuilder.Entity("ProductCatalog.Domain.Order.CatalogOrder", b =>

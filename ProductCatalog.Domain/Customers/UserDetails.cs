@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProductCatalog.Domain.Products;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -36,9 +37,13 @@ namespace ProductCatalog.Domain.Customers
         [Required]
         public string Address { get; set; }
 
-        
+        [Column("UserDetailsId", Order = 6)]
+        [ForeignKey("UserDetail")]
+        public int UserDetailsId { get; set; }
+        public User UserDetail { get; set; }
 
-        
+
+
 
 
     }

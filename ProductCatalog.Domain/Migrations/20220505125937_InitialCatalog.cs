@@ -63,23 +63,6 @@ namespace ProductCatalog.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "UserDetails",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "Varchar(50)", nullable: false),
-                    LastName = table.Column<string>(type: "Varchar(50)", nullable: false),
-                    Email = table.Column<string>(type: "Varchar(100)", nullable: false),
-                    Contact = table.Column<long>(type: "bigInt", nullable: false),
-                    Address = table.Column<string>(type: "varchar(500)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserDetails", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -164,6 +147,30 @@ namespace ProductCatalog.Domain.Migrations
                     table.ForeignKey(
                         name: "FK_Role_User_UserId",
                         column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserDetails",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "Varchar(50)", nullable: false),
+                    LastName = table.Column<string>(type: "Varchar(50)", nullable: false),
+                    Email = table.Column<string>(type: "Varchar(100)", nullable: false),
+                    Contact = table.Column<long>(type: "bigInt", nullable: false),
+                    Address = table.Column<string>(type: "varchar(500)", nullable: false),
+                    UserDetailsId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserDetails", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserDetails_User_UserDetailsId",
+                        column: x => x.UserDetailsId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -384,6 +391,11 @@ namespace ProductCatalog.Domain.Migrations
                 name: "IX_Role_UserId",
                 table: "Role",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserDetails_UserDetailsId",
+                table: "UserDetails",
+                column: "UserDetailsId");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_OrderStatus_CatalogOrder_CatalogOrderId",

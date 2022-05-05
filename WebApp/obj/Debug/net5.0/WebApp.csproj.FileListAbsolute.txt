@@ -660,3 +660,4 @@ C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\W
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\ref\WebApp.dll
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.pdb
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
+C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs

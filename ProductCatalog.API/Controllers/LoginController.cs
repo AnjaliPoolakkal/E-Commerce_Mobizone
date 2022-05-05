@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using ProductCatalog.API.DTO;
@@ -14,6 +15,9 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
+    [Route("api/[Controller]")]
+    [ApiController]
     public class LoginController : Controller
     {
         private readonly CatalogDBContext context;
@@ -23,6 +27,10 @@ namespace ProductCatalog.API.Controllers
             context = _context;
             _jWTSetting = options.Value;
         }
+
+        //[Authorize(AuthenticationSchemes = "Bearer")]
+        
+        //[Route("api/Tokens")]
         [HttpPost("Authenticate")]
        public IActionResult Authenticate([FromBody] UserLogin credential)
         {

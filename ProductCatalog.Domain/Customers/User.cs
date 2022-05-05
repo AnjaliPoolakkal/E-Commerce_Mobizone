@@ -43,6 +43,7 @@ namespace ProductCatalog.Domain.Customers
         [Required]
         public string ModifiedBy { get; set; }
 
+
         
        
         public virtual ICollection<Cart.CartItem> CartItems { get; set; }
