@@ -51,10 +51,7 @@ namespace ProductCatalog.Domain.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FirstName = table.Column<string>(type: "Varchar(50)", nullable: false),
-                    LastName = table.Column<string>(type: "Varchar(50)", nullable: false),
-                    Email = table.Column<string>(type: "Varchar(100)", nullable: false),
-                    Contact = table.Column<long>(type: "bigInt", nullable: false),
+                    ForgotToken = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -66,18 +63,20 @@ namespace ProductCatalog.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "UserLocation",
+                name: "UserDetails",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    FirstName = table.Column<string>(type: "Varchar(50)", nullable: false),
+                    LastName = table.Column<string>(type: "Varchar(50)", nullable: false),
+                    Email = table.Column<string>(type: "Varchar(100)", nullable: false),
+                    Contact = table.Column<long>(type: "bigInt", nullable: false),
+                    Address = table.Column<string>(type: "varchar(500)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserLocation", x => x.Id);
+                    table.PrimaryKey("PK_UserDetails", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -166,34 +165,6 @@ namespace ProductCatalog.Domain.Migrations
                         name: "FK_Role_User_UserId",
                         column: x => x.UserId,
                         principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "UserAddress",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    AddressLine = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Contact = table.Column<int>(type: "int", nullable: false),
-                    UserLocationId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserAddress", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_UserAddress_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_UserAddress_UserLocation_UserLocationId",
-                        column: x => x.UserLocationId,
-                        principalTable: "UserLocation",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -414,16 +385,6 @@ namespace ProductCatalog.Domain.Migrations
                 table: "Role",
                 column: "UserId");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_UserAddress_UserId",
-                table: "UserAddress",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserAddress_UserLocationId",
-                table: "UserAddress",
-                column: "UserLocationId");
-
             migrationBuilder.AddForeignKey(
                 name: "FK_OrderStatus_CatalogOrder_CatalogOrderId",
                 table: "OrderStatus",
@@ -472,10 +433,7 @@ namespace ProductCatalog.Domain.Migrations
                 name: "Role");
 
             migrationBuilder.DropTable(
-                name: "UserAddress");
-
-            migrationBuilder.DropTable(
-                name: "UserLocation");
+                name: "UserDetails");
 
             migrationBuilder.DropTable(
                 name: "LookUp");

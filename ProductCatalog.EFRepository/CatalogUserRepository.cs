@@ -20,7 +20,7 @@ namespace ProductCatalog.EFRepository
         }
         public async override Task<IEnumerable<User>> GetAll()
         {
-            return await context.User.Include(c => c.UserAddresses).ToListAsync();
+            return await context.User.ToListAsync();
         }
     }
 

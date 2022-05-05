@@ -17,8 +17,10 @@ namespace ProductCatalog.BusinessObject
             services.AddTransient<ICatalogLookUpRepository, CatalogLookUpRepository>();
             services.AddTransient<ICatalogProductRepository, CatalogProductRepository>();
             services.AddTransient<ICatalogProductBO, CatalogProductBO>();
-            services.AddTransient<ICatalogUserBO, CatalogUserBO>();
+            services.AddTransient<Admin.ICatalogUserBO, CatalogUserBO>();
             services.AddTransient<ICatalogUserRepository, CatalogUserRepository>();
+            services.AddTransient<ICatalogOrderBO, CatalogOrderBO>();
+            services.AddTransient<ICatalogOrderRepository, CatalogOrderRepository>();
         }
     }
 }

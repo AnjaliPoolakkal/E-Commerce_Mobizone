@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.Repository
 {
-    public interface ICatalogUserRepository : IGenericService<User>
+    public interface ICatalogUserRepository : IGenericRepository<User>
     {
     }
 }

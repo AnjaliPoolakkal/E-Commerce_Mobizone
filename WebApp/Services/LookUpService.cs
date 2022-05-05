@@ -1,11 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
-using ProductCatalog.API.Models;
+
 using ProductCatalog.Domain.Products;
-using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 

@@ -1,12 +1,15 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using ProductCatalog.BusinessObject;
 using ProductCatalog.Domain.DataBase;
+using System.Text;
 
 namespace ProductCatalog.API
 {
@@ -35,6 +38,11 @@ namespace ProductCatalog.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProductCatalog.API", Version = "v1" });
             });
 
+            var _jwtSetting = Configuration.GetSection("JWTSetting");
+            services.Configure<JWTSetting>(_jwtSetting);
+
+
+
             services.AddTransient<ICatalogLookUpBO, CatalogLookUpBO>();
             LoadCustomerServices.Initialize(services);
         }
@@ -52,7 +60,7 @@ namespace ProductCatalog.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

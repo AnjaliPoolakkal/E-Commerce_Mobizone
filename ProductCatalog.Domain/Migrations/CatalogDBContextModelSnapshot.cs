@@ -72,10 +72,6 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnName("Id")
                         .UseIdentityColumn();
 
-                    b.Property<long>("Contact")
-                        .HasColumnType("bigInt")
-                        .HasColumnName("Contact");
-
                     b.Property<string>("CreatedBy")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
@@ -85,20 +81,10 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("CreatedDateUtc");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("ForgotToken")
                         .IsRequired()
-                        .HasColumnType("Varchar(100)")
-                        .HasColumnName("Email");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("Varchar(50)")
-                        .HasColumnName("FirstName");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("Varchar(50)")
-                        .HasColumnName("LastName");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("ForgotToken");
 
                     b.Property<string>("ModifiedBy")
                         .IsRequired()
@@ -124,7 +110,7 @@ namespace ProductCatalog.Domain.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("ProductCatalog.Domain.Customers.UserAddress", b =>
+            modelBuilder.Entity("ProductCatalog.Domain.Customers.UserDetails", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -132,58 +118,33 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnName("Id")
                         .UseIdentityColumn();
 
-                    b.Property<string>("AddressLine")
+                    b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("AddressLine");
+                        .HasColumnType("varchar(500)")
+                        .HasColumnName("Address");
 
-                    b.Property<int>("Contact")
-                        .HasColumnType("int")
+                    b.Property<long>("Contact")
+                        .HasColumnType("bigInt")
                         .HasColumnName("Contact");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int")
-                        .HasColumnName("UserId");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("Varchar(100)")
+                        .HasColumnName("Email");
 
-                    b.Property<int>("UserLocationId")
-                        .HasColumnType("int")
-                        .HasColumnName("UserLocationId");
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("Varchar(50)")
+                        .HasColumnName("FirstName");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("Varchar(50)")
+                        .HasColumnName("LastName");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
-                    b.HasIndex("UserLocationId");
-
-                    b.ToTable("UserAddress");
-                });
-
-            modelBuilder.Entity("ProductCatalog.Domain.Customers.UserLocation", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("City");
-
-                    b.Property<string>("Country")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("Country");
-
-                    b.Property<string>("PostalCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("PostalCode");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("UserLocation");
+                    b.ToTable("UserDetails");
                 });
 
             modelBuilder.Entity("ProductCatalog.Domain.Order.CatalogOrder", b =>
@@ -672,25 +633,6 @@ namespace ProductCatalog.Domain.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ProductCatalog.Domain.Customers.UserAddress", b =>
-                {
-                    b.HasOne("ProductCatalog.Domain.Customers.User", "User")
-                        .WithMany("UserAddresses")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProductCatalog.Domain.Customers.UserLocation", "UserLocation")
-                        .WithMany()
-                        .HasForeignKey("UserLocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-
-                    b.Navigation("UserLocation");
-                });
-
             modelBuilder.Entity("ProductCatalog.Domain.Order.CatalogOrder", b =>
                 {
                     b.HasOne("ProductCatalog.Domain.Products.LookUp", "LookUp")
@@ -797,8 +739,6 @@ namespace ProductCatalog.Domain.Migrations
                     b.Navigation("CartItems");
 
                     b.Navigation("OrderDetails");
-
-                    b.Navigation("UserAddresses");
                 });
 
             modelBuilder.Entity("ProductCatalog.Domain.Products.Product", b =>

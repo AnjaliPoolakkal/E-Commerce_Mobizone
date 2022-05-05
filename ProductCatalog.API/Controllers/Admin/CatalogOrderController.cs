@@ -17,11 +17,11 @@ namespace ProductCatalog.API.Controllers
     [ApiController]
     public class CatalogOrderController : ControllerBase
     {
-        private readonly CatalogDbContext _context;
+        private readonly CatalogDBContext _context;
         private readonly CatalogOrderBO catalogOrderBO;
 
 
-        public CatalogOrderController(CatalogDbContext context)
+        public CatalogOrderController(CatalogDBContext context)
         {
             _context = context;
         }

@@ -10,9 +10,9 @@ namespace ProductCatalog.API.Controllers.Admin
 {
 
     [Route("api/[controller]")]
-[ApiController]
+    [ApiController]
     public class UserController : Controller
-{
+    {
         private readonly ICatalogUserBO catalogItemBO;
 
         public UserController(ICatalogUserBO catalogItemBO)

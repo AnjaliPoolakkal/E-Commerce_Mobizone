@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.Repository
 {
-    public interface ICatalogLookUpRepository : IGenericService<LookUp>
+    public interface ICatalogLookUpRepository : IGenericRepository<LookUp>
     {
        // Task<IEnumerable<string>> GetByParentId(LookUpId id);
     }
