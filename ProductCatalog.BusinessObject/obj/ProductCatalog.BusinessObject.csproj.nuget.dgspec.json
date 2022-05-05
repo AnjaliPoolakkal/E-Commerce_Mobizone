@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {}
+    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {
+    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
         "projectName": "ProductCatalog.BusinessObject",
-        "projectPath": "D:\\mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
         "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "D:\\mobizone\\ProductCatalog.BusinessObject\\obj\\",
+        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
-                "projectPath": "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
+              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
               },
-              "D:\\mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
-                "projectPath": "D:\\mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj"
+              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
+                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj"
               },
-              "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
-                "projectPath": "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
+              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
               }
             }
           }
@@ -57,6 +57,14 @@
             "AspNetCoreHero.ToastNotification": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -94,6 +102,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.17.0, )"
+            },
             "Toaster": {
               "target": "Package",
               "version": "[2.1.10716, )"
@@ -118,14 +130,14 @@
         }
       }
     },
-    "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
         "projectName": "ProductCatalog.Domain",
-        "projectPath": "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
         "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "D:\\mobizone\\ProductCatalog.Domain\\obj\\",
+        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -162,6 +174,14 @@
               "target": "Package",
               "version": "[1.1.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -198,6 +218,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.17.0, )"
+            },
             "Toaster": {
               "target": "Package",
               "version": "[2.1.10716, )"
@@ -222,14 +246,14 @@
         }
       }
     },
-    "D:\\mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
+    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
+        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
         "projectName": "ProductCatalog.EFRepository",
-        "projectPath": "D:\\mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
+        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
         "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "D:\\mobizone\\ProductCatalog.EFRepository\\obj\\",
+        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -250,8 +274,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
-                "projectPath": "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
+              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
               }
             }
           }
@@ -269,6 +293,14 @@
             "AspNetCoreHero.ToastNotification": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -305,6 +337,10 @@
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.17.0, )"
             },
             "Toaster": {
               "target": "Package",
@@ -330,14 +366,14 @@
         }
       }
     },
-    "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
         "projectName": "ProductCatalog.Repository",
-        "projectPath": "D:\\mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
+        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
         "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "D:\\mobizone\\ProductCatalog.Repository\\obj\\",
+        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -358,8 +394,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
-                "projectPath": "D:\\mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
+              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
               }
             }
           }
@@ -377,6 +413,14 @@
             "AspNetCoreHero.ToastNotification": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -413,6 +457,10 @@
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.17.0, )"
             },
             "Toaster": {
               "target": "Package",
