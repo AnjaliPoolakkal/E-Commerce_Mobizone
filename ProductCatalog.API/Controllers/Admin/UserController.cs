@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers.Admin
 {
-    [Authorize]
-    [Route("[controller]")]
+    
+    [Route("api/[controller]")]
     [ApiController]
     public class UserController : Controller
     {

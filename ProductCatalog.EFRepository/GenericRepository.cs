@@ -10,51 +10,58 @@ namespace ProductCatalog.EFRepository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly DbContext context;
-        DbSet<T> dbSet;
+        private readonly DbContext _context;
+        DbSet<T> _dbSet;
+
+        #region Constructor
         public GenericRepository(DbContext context)
         {
-            this.context = context;
-            dbSet = context.Set<T>();
+            this._context = context;
+            _dbSet = context.Set<T>();
         }
+        #endregion
+
+        #region Generic method for Add
         public async virtual Task<T> Add(T item)
         {
-            try {
-                dbSet.Add(item);
-                await context.SaveChangesAsync();
+            try
+            {
+                _dbSet.Add(item);
+                await _context.SaveChangesAsync();
                 return item;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return null;
             }
-            
+
         }
+        #endregion
 
         public async virtual Task Delete(int id)
         {
-            T entity = await dbSet.FindAsync(id);
-            dbSet.Remove(entity);
-            await context.SaveChangesAsync();
+            T entity = await _dbSet.FindAsync(id);
+            _dbSet.Remove(entity);
+            await _context.SaveChangesAsync();
         }
 
         public async virtual Task<IEnumerable<T>> GetAll()
         {
-            return await dbSet.ToListAsync();
+            return await _dbSet.ToListAsync();
         }
 
         public async virtual Task<T> GetById(int id)
         {
-            return await dbSet.FindAsync(id);
+            return await _dbSet.FindAsync(id);
         }
 
-        
+
 
         public async virtual Task Update(T item)
         {
-            context.Entry<T>(item).State = EntityState.Modified;
-            await context.SaveChangesAsync();
+            _context.Entry<T>(item).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
         }
-       
+
     }
 }

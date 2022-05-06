@@ -13,8 +13,8 @@ using Microsoft.AspNetCore.Authorization;
 namespace ProductCatalog.API.Controllers
 {
 
-    [Authorize]
-    [Route("[controller]")]
+    
+    [Route("api/[controller]")]
     [ApiController]
     public class CatalogOrderController : ControllerBase
     {

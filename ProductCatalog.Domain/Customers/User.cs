@@ -30,9 +30,10 @@ namespace ProductCatalog.Domain.Customers
         public string ForgotToken { get; set; }
 
         [Column("RoleId", Order = 4)]
+        [ForeignKey("Role")]
         [Required]
         public int RoleId { get; set; }
-        public virtual Role.Roles Roled  { get; set; }
+        public virtual Role.Roles Role  { get; set; }
 
         [Column("CreatedDateUtc", Order = 5)]
         [Required]
