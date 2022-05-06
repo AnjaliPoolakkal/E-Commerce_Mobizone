@@ -10,7 +10,7 @@ using ProductCatalog.Domain.DataBase;
 namespace ProductCatalog.Domain.Migrations
 {
     [DbContext(typeof(CatalogDBContext))]
-    [Migration("20220505125937_InitialCatalog")]
+    [Migration("20220506054707_InitialCatalog")]
     partial class InitialCatalog
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -102,12 +102,21 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("Password");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int")
+                        .HasColumnName("RoleId");
+
+                    b.Property<int?>("RoledId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("UserName");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoledId");
 
                     b.ToTable("User");
                 });
@@ -594,30 +603,24 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("CreatedDateUtc");
 
-                    b.Property<DateTime>("CreatedBy")
-                        .HasColumnType("datetime2")
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("Varchar(50)")
                         .HasColumnName("CreatedBy");
 
                     b.Property<DateTime>("ModifiedAtUTC")
                         .HasColumnType("datetime2")
                         .HasColumnName("UpdatedDateUtc");
 
-                    b.Property<DateTime>("ModifiedBy")
-                        .HasColumnType("datetime2")
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("Varchar(50)")
                         .HasColumnName("UpdatedBy");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int")
-                        .HasColumnName("UserId");
 
                     b.Property<string>("UserRole")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
+                        .HasColumnType("Varchar(50)")
                         .HasColumnName("Roles");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Role");
                 });
@@ -639,6 +642,15 @@ namespace ProductCatalog.Domain.Migrations
                     b.Navigation("LookUp");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ProductCatalog.Domain.Customers.User", b =>
+                {
+                    b.HasOne("ProductCatalog.Domain.Role.Roles", "Roled")
+                        .WithMany()
+                        .HasForeignKey("RoledId");
+
+                    b.Navigation("Roled");
                 });
 
             modelBuilder.Entity("ProductCatalog.Domain.Customers.UserDetails", b =>
@@ -740,17 +752,6 @@ namespace ProductCatalog.Domain.Migrations
                     b.Navigation("LookUp");
 
                     b.Navigation("Specification");
-                });
-
-            modelBuilder.Entity("ProductCatalog.Domain.Role.Roles", b =>
-                {
-                    b.HasOne("ProductCatalog.Domain.Customers.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ProductCatalog.Domain.Customers.User", b =>

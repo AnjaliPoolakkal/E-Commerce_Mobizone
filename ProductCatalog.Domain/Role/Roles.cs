@@ -15,26 +15,23 @@ namespace ProductCatalog.Domain.Role
         [Required]
         public int Id { get; set; }
 
-        [Column("Roles", Order = 1)]
+        [Column("Roles", Order = 1, TypeName = "Varchar(50)")]
         [Required]
         public string UserRole { get; set; }
 
-        [Column("UserId", Order = 2)]
-        [Required]
-        public int UserId { get; set; }
-        public virtual Customers.User User { get; set; }
+        
 
-        [Column("CreatedDateUtc", Order = 3)]
+        [Column("CreatedDateUtc", Order = 2)]
         public DateTime CreatedAtUTC { get; set; }
 
-        [Column("UpdatedDateUtc", Order = 4)]
+        [Column("UpdatedDateUtc", Order = 3)]
         public DateTime ModifiedAtUTC { get; set; }
 
-        [Column("CreatedBy", Order = 5)]
-        public DateTime CreatedBy { get; set; }
+        [Column("CreatedBy", Order = 4, TypeName = "Varchar(50)")]
+        public string CreatedBy { get; set; }
 
-        [Column("UpdatedBy", Order = 6)]
-        public DateTime ModifiedBy { get; set; }
+        [Column("UpdatedBy", Order = 6, TypeName = "Varchar(50)")]
+        public string ModifiedBy { get; set; }
 
 
 

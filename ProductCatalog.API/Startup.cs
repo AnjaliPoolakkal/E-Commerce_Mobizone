@@ -41,6 +41,24 @@ namespace ProductCatalog.API
             var _jwtSetting = Configuration.GetSection("JWTSetting");
             services.Configure<JWTSetting>(_jwtSetting);
 
+            var authKey = Configuration.GetValue<string>("JWTSetting:SecretKey");
+            services.AddAuthentication(item =>
+            {
+                item.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                item.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(item =>
+            {
+                item.RequireHttpsMetadata = true;
+                item.SaveToken = true;
+                item.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authKey)),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+            
 
 
             services.AddTransient<ICatalogLookUpBO, CatalogLookUpBO>();

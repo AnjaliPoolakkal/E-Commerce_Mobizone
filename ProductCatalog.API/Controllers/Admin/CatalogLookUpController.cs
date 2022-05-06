@@ -7,10 +7,12 @@ using System.Net.Http;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ProductCatalog.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Authorize(Roles ="admin")]
+    [Route("[controller]")]
     [ApiController]
     public class CatalogLookUpController : ControllerBase
     {
@@ -22,7 +24,7 @@ namespace ProductCatalog.API.Controllers
         {
             this.catalogLookUpBO = catalogLookUpBO;
         }
-
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<LookUp>>> GetLookUpItems()
         {

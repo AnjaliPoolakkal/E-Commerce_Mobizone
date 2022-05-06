@@ -15,8 +15,8 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers
 {
-    [Authorize(AuthenticationSchemes = "Bearer")]
-    [Route("api/[Controller]")]
+    
+    [Route("[Controller]")]
     [ApiController]
     public class LoginController : Controller
     {
@@ -28,9 +28,7 @@ namespace ProductCatalog.API.Controllers
             _jWTSetting = options.Value;
         }
 
-        //[Authorize(AuthenticationSchemes = "Bearer")]
-        
-        //[Route("api/Tokens")]
+        [AllowAnonymous]
         [HttpPost("Authenticate")]
        public IActionResult Authenticate([FromBody] UserLogin credential)
         {
@@ -45,6 +43,7 @@ namespace ProductCatalog.API.Controllers
                     new Claim[]
                     {
                         new Claim(ClaimTypes.Name,_user.UserName),
+                        
                     }
                 ),
                 Expires=DateTime.Now.AddSeconds(60),

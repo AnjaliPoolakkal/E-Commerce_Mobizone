@@ -22,6 +22,23 @@ namespace ProductCatalog.Domain.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Role",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Roles = table.Column<string>(type: "Varchar(50)", nullable: false),
+                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedBy = table.Column<string>(type: "Varchar(50)", nullable: true),
+                    UpdatedBy = table.Column<string>(type: "Varchar(50)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Role", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Specifications",
                 columns: table => new
                 {
@@ -52,6 +69,8 @@ namespace ProductCatalog.Domain.Migrations
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ForgotToken = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RoleId = table.Column<int>(type: "int", nullable: false),
+                    RoledId = table.Column<int>(type: "int", nullable: true),
                     CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -60,6 +79,12 @@ namespace ProductCatalog.Domain.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_User", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_User_Role_RoledId",
+                        column: x => x.RoledId,
+                        principalTable: "Role",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -122,30 +147,6 @@ namespace ProductCatalog.Domain.Migrations
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CartItem_User_UserId",
-                        column: x => x.UserId,
-                        principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Role",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Roles = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    CreatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedDateUtc = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreatedBy = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedBy = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Role", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Role_User_UserId",
                         column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "Id",
@@ -388,9 +389,9 @@ namespace ProductCatalog.Domain.Migrations
                 column: "SpecificationId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Role_UserId",
-                table: "Role",
-                column: "UserId");
+                name: "IX_User_RoledId",
+                table: "User",
+                column: "RoledId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserDetails_UserDetailsId",
@@ -442,9 +443,6 @@ namespace ProductCatalog.Domain.Migrations
                 name: "OrderStatus");
 
             migrationBuilder.DropTable(
-                name: "Role");
-
-            migrationBuilder.DropTable(
                 name: "UserDetails");
 
             migrationBuilder.DropTable(
@@ -452,6 +450,9 @@ namespace ProductCatalog.Domain.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
+
+            migrationBuilder.DropTable(
+                name: "Role");
 
             migrationBuilder.DropTable(
                 name: "OrderDetails");

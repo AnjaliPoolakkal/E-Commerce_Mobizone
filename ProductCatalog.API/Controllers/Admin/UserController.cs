@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.BusinessObject.Admin;
 using ProductCatalog.Domain.Customers;
 using System;
@@ -8,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers.Admin
 {
-
-    [Route("api/[controller]")]
+    [Authorize]
+    [Route("[controller]")]
     [ApiController]
     public class UserController : Controller
     {
