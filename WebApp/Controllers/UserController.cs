@@ -23,6 +23,7 @@ namespace WebApp.Controllers
             var items = await catalogService.GetUserItemsAsync();
             return View(items);
         }
+<<<<<<< HEAD
          public async Task<IActionResult> UserRegistration()
         {
             return View();
@@ -38,6 +39,13 @@ namespace WebApp.Controllers
         }
 
 
+=======
+        public ActionResult Login()
+        {
+            return View();
+        }  
+          
+>>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
     }
     }
 
