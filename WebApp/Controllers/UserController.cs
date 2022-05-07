@@ -22,8 +22,11 @@ namespace WebApp.Controllers
             var items = await catalogService.GetUserItemsAsync();
             return View(items);
         }
+        public ActionResult Login()
+        {
+            return View();
+        }  
           
-           
     }
     }
 

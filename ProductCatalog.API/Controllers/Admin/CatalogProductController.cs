@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers.Admin
 {
-    [Authorize]
+    
     [Route("[controller]")]
     [ApiController]
     public class CatalogProductController : ControllerBase
