@@ -5792,24 +5792,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\apoolakkal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lbalakrishnan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
       "projectName": "ProductCatalog.Domain",
-      "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
-      "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\obj\\",
+      "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+      "packagesPath": "C:\\Users\\lbalakrishnan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\lbalakrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5902,6 +5897,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

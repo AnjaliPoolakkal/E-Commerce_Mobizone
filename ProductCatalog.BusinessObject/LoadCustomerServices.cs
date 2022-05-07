@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using ProductCatalog.BusinessObject.Admin;
+using ProductCatalog.BusinessObject.Admin.Authentication;
 using ProductCatalog.EFRepository;
 using ProductCatalog.Repository;
 using System;
@@ -21,6 +22,8 @@ namespace ProductCatalog.BusinessObject
             services.AddTransient<ICatalogUserRepository, CatalogUserRepository>();
             services.AddTransient<ICatalogOrderBO, CatalogOrderBO>();
             services.AddTransient<ICatalogOrderRepository, CatalogOrderRepository>();
+            services.AddTransient<IAuthentication, Authentication>();
+            services.AddTransient<IAuthenticationBO, AuthenticationBO>();
         }
     }
 }

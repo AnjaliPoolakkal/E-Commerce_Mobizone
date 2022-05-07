@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {}
+    "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {
+    "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
         "projectName": "ProductCatalog.BusinessObject",
-        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\obj\\",
+        "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\lbalakrishnan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lbalakrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,14 +28,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
+              "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
               },
-              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
-                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj"
+              "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
+                "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj"
               },
-              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
-                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
+              "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+                "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
               }
             }
           }
@@ -121,6 +117,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -130,21 +132,17 @@
         }
       }
     },
-    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+    "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
         "projectName": "ProductCatalog.Domain",
-        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
-        "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\obj\\",
+        "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj",
+        "packagesPath": "C:\\Users\\lbalakrishnan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lbalakrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -237,6 +235,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -246,21 +250,17 @@
         }
       }
     },
-    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
+    "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
+        "projectUniqueName": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
         "projectName": "ProductCatalog.EFRepository",
-        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
-        "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\obj\\",
+        "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj",
+        "packagesPath": "C:\\Users\\lbalakrishnan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lbalakrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -274,8 +274,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
-                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
+              "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+                "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
               }
             }
           }
@@ -357,6 +357,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -366,21 +372,17 @@
         }
       }
     },
-    "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+    "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
         "projectName": "ProductCatalog.Repository",
-        "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
-        "packagesPath": "C:\\Users\\apoolakkal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Repository\\obj\\",
+        "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj",
+        "packagesPath": "C:\\Users\\lbalakrishnan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\apoolakkal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lbalakrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -394,8 +396,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\apoolakkal\\source\\Example\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
+              "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
               }
             }
           }
@@ -477,6 +479,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

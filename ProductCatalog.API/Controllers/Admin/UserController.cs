@@ -14,18 +14,18 @@ namespace ProductCatalog.API.Controllers.Admin
     [ApiController]
     public class UserController : Controller
     {
-        private readonly ICatalogUserBO catalogItemBO;
+        private readonly ICatalogUserBO _catalogItemBO;
 
         public UserController(ICatalogUserBO catalogItemBO)
         {
-            this.catalogItemBO = catalogItemBO;
+            this._catalogItemBO = catalogItemBO;
         }
 
         // GET: api/CatalogItems
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            return Ok(await catalogItemBO.GetUser());
+            return Ok(await _catalogItemBO.GetUser());
         }
 
 

@@ -58,3 +58,23 @@ C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.EFReposito
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ref\ProductCatalog.EFRepository.dll
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.pdb
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.genruntimeconfig.cache
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.EFRepository.deps.json
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.EFRepository.runtimeconfig.json
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.EFRepository.runtimeconfig.dev.json
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.EFRepository.dll
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ref\ProductCatalog.EFRepository.dll
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.EFRepository.pdb
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.Domain.dll
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.Repository.dll
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.Repository.pdb
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\bin\Debug\net5.0\ProductCatalog.Domain.pdb
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.csproj.AssemblyReference.cache
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.AssemblyInfoInputs.cache
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.AssemblyInfo.cs
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.csproj.CoreCompileInputs.cache
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.csproj.CopyComplete
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.dll
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ref\ProductCatalog.EFRepository.dll
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.pdb
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.EFRepository\obj\Debug\net5.0\ProductCatalog.EFRepository.genruntimeconfig.cache

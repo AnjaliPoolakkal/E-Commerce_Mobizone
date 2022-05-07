@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProductCatalog.API.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +23,21 @@ namespace WebApp.Controllers
             var items = await catalogService.GetUserItemsAsync();
             return View(items);
         }
-          
-           
+         public async Task<IActionResult> UserRegistration()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> UserRegistration(UserRegister user)
+        {
+            if (catalogService.RegisterUser(user).Result)
+            {
+                return Redirect("/");
+            }
+            return View();
+        }
+
+
     }
     }
 
