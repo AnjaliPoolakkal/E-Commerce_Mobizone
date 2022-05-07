@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ProductCatalog.API.Controllers
 {
-    [Authorize(Roles ="admin")]
-    [Route("[controller]")]
+    
+    [Route("api/[controller]")]
     [ApiController]
     public class CatalogLookUpController : ControllerBase
     {

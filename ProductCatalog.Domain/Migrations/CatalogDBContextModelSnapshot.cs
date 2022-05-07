@@ -104,9 +104,6 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnType("int")
                         .HasColumnName("RoleId");
 
-                    b.Property<int?>("RoledId")
-                        .HasColumnType("int");
-
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
@@ -114,7 +111,7 @@ namespace ProductCatalog.Domain.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RoledId");
+                    b.HasIndex("RoleId");
 
                     b.ToTable("User");
                 });
@@ -127,19 +124,9 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnName("Id")
                         .UseIdentityColumn();
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("varchar(500)")
-                        .HasColumnName("Address");
-
-                    b.Property<long>("Contact")
-                        .HasColumnType("bigInt")
-                        .HasColumnName("Contact");
-
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("Varchar(100)")
-                        .HasColumnName("Email");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -151,13 +138,13 @@ namespace ProductCatalog.Domain.Migrations
                         .HasColumnType("Varchar(50)")
                         .HasColumnName("LastName");
 
-                    b.Property<int>("UserDetailsId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int")
-                        .HasColumnName("UserDetailsId");
+                        .HasColumnName("UserId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserDetailsId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("UserDetails");
                 });
@@ -644,22 +631,24 @@ namespace ProductCatalog.Domain.Migrations
 
             modelBuilder.Entity("ProductCatalog.Domain.Customers.User", b =>
                 {
-                    b.HasOne("ProductCatalog.Domain.Role.Roles", "Roled")
+                    b.HasOne("ProductCatalog.Domain.Role.Roles", "Role")
                         .WithMany()
-                        .HasForeignKey("RoledId");
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Roled");
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("ProductCatalog.Domain.Customers.UserDetails", b =>
                 {
-                    b.HasOne("ProductCatalog.Domain.Customers.User", "UserDetail")
+                    b.HasOne("ProductCatalog.Domain.Customers.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserDetailsId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("UserDetail");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ProductCatalog.Domain.Order.CatalogOrder", b =>
