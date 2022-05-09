@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using ProductCatalog.API.DTO;
+using ProductCatalog.API.Handler;
 using ProductCatalog.Domain.Customers;
 using ProductCatalog.Domain.DataBase;
+using ProductCatalog.Domain.Role;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -15,44 +18,52 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers
 {
-    [Authorize(AuthenticationSchemes = "Bearer")]
-    [Route("api/[Controller]")]
+
+    [Route("[Controller]")]
     [ApiController]
     public class LoginController : Controller
     {
-        private readonly CatalogDBContext context;
+        #region private variables
+        private readonly CatalogDBContext _context;
         private readonly JWTSetting _jWTSetting;
-        public LoginController(CatalogDBContext _context,IOptions<JWTSetting> options)
-        {
-            context = _context;
-            _jWTSetting = options.Value;
-        }
+        IOptions<JWTSetting> _options;
+        #endregion
 
-        //[Authorize(AuthenticationSchemes = "Bearer")]
-        
-        //[Route("api/Tokens")]
-        [HttpPost("Authenticate")]
-       public IActionResult Authenticate([FromBody] UserLogin credential)
+        #region Constructor
+        public LoginController(CatalogDBContext context, IOptions<JWTSetting> options)
         {
-            var _user = context.User.FirstOrDefault(o => o.UserName == credential.UserName && o.Password == credential.password);
-            if (_user == null)
-                return Unauthorized();
-            var tokenhandler = new JwtSecurityTokenHandler();
-            var tokenKey = Encoding.UTF8.GetBytes(_jWTSetting.SecretKey);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new System.Security.Claims.ClaimsIdentity(
-                    new Claim[]
-                    {
-                        new Claim(ClaimTypes.Name,_user.UserName),
-                    }
-                ),
-                Expires=DateTime.Now.AddSeconds(60),
-                SigningCredentials=new SigningCredentials(new SymmetricSecurityKey(tokenKey),SecurityAlgorithms.HmacSha256)
-            };
-            var token = tokenhandler.CreateToken(tokenDescriptor);
-            string finalToken = tokenhandler.WriteToken(token);
-            return Ok(finalToken);
+            _context = context;
+            _jWTSetting = options.Value;
+            _options = options;
         }
+        #endregion
+
+        #region JWT token authentication for Login
+        /// <summary>
+        /// authentication
+        /// </summary>
+        /// <param name="credential"></param>
+        /// <returns></returns>
+
+        [AllowAnonymous]
+        [HttpPost("Authenticate")]
+        public IActionResult Authenticate([FromBody] UserLogin credential)
+        {
+            try { 
+                Auth auth = new Auth(_context, _options);
+                
+                string token = auth.Authenticate(credential);
+                if(token==null)
+                {
+                    return BadRequest();
+                }
+                return Ok(token);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        #endregion
     }
 }

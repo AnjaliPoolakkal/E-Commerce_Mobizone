@@ -16,30 +16,38 @@ namespace ProductCatalog.Domain.Customers
         public int Id { get; set; }
 
         [Column("UserName", Order = 1)]
-        [Required]
+        [Required(ErrorMessage ="UserName Required")]
         public string UserName { get; set; }
 
         [Column("Password", Order = 2)]
-        [Required]
+        [Required(ErrorMessage = "Password Required")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
         [Column("ForgotToken", Order = 3)]
         [Required]
         public string ForgotToken { get; set; }
 
-        [Column("CreatedDateUtc", Order = 4)]
+        [Column("RoleId", Order = 4)]
+        [ForeignKey("Role")]
+        [Required]
+        public int RoleId { get; set; }
+        public virtual Role.Roles Role  { get; set; }
+
+        [Column("CreatedDateUtc", Order = 5)]
         [Required]
         public DateTime CreatedOnUTC { get; set; }
 
-        [Column("UpdatedDateUtc", Order = 5)]
+        [Column("UpdatedDateUtc", Order = 6)]
         [Required]
         public DateTime ModifiedOnUTC { get; set; }
 
-        [Column("CreatedBy", Order = 6)]
+        [Column("CreatedBy", Order = 7)]
         [Required]
         public string CreatedBy { get; set; }
 
-        [Column("UpdatedBy", Order = 7)]
+        [Column("UpdatedBy", Order = 8)]
         [Required]
         public string ModifiedBy { get; set; }
 

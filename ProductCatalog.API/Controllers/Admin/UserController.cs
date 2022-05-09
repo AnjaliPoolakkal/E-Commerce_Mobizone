@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.BusinessObject.Admin;
 using ProductCatalog.Domain.Customers;
 using System;
@@ -8,23 +9,23 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers.Admin
 {
-
+    
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : Controller
     {
-        private readonly ICatalogUserBO catalogItemBO;
+        private readonly ICatalogUserBO _catalogItemBO;
 
         public UserController(ICatalogUserBO catalogItemBO)
         {
-            this.catalogItemBO = catalogItemBO;
+            this._catalogItemBO = catalogItemBO;
         }
 
         // GET: api/CatalogItems
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            return Ok(await catalogItemBO.GetUser());
+            return Ok(await _catalogItemBO.GetUser());
         }
 
 

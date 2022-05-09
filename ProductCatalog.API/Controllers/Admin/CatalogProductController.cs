@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.BusinessObject.Admin;
 using ProductCatalog.Domain.Products;
@@ -9,7 +10,12 @@ using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers.Admin
 {
+    
+<<<<<<< HEAD
+    [Route("[controller]")]
+=======
     [Route("api/[controller]")]
+>>>>>>> ea998fb0d7962dc2ad0c183fbf01d0a81efe2962
     [ApiController]
     public class CatalogProductController : ControllerBase
     {
