@@ -1,8 +1,23 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\lbalakrishnan\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\lbalakrishnan\\.nuget\\packages"
+=======
+<<<<<<< HEAD
+      "C:\\Users\\ashaji\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ashaji\\.nuget\\packages"
+=======
+<<<<<<< HEAD
+      "C:\\Users\\lbalakrishnan\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lbalakrishnan\\.nuget\\packages"
+=======
+      "C:\\Users\\kparambath\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kparambath\\.nuget\\packages"
+>>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
+>>>>>>> da1491b2beacc2e2ae72c4e061dfe05c5691a8d2
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
     ]
   }
 }

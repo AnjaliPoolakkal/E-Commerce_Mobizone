@@ -73,6 +73,23 @@ C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.Domain\obj
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.pdb
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.genruntimeconfig.cache
 <<<<<<< HEAD
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\bin\Debug\net5.0\ProductCatalog.Domain.deps.json
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\bin\Debug\net5.0\ProductCatalog.Domain.runtimeconfig.json
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\bin\Debug\net5.0\ProductCatalog.Domain.runtimeconfig.dev.json
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\bin\Debug\net5.0\ProductCatalog.Domain.dll
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\bin\Debug\net5.0\ref\ProductCatalog.Domain.dll
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\bin\Debug\net5.0\ProductCatalog.Domain.pdb
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.csproj.AssemblyReference.cache
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.AssemblyInfoInputs.cache
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.AssemblyInfo.cs
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.dll
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ref\ProductCatalog.Domain.dll
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.pdb
+C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.genruntimeconfig.cache
+=======
+<<<<<<< HEAD
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.csproj.AssemblyReference.cache
 =======
 C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\ProductCatalog.Domain\bin\Debug\net5.0\ProductCatalog.Domain.deps.json
@@ -107,3 +124,4 @@ C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\ProductCatal
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\ProductCatalog.Domain\obj\Debug\net5.0\ProductCatalog.Domain.genruntimeconfig.cache
 >>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
 >>>>>>> bcf3363f80441c0b48509d443dc16da632409eca
+>>>>>>> da1491b2beacc2e2ae72c4e061dfe05c5691a8d2

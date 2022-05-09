@@ -6813,11 +6813,37 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\lbalakrishnan\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\ashaji\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\lbalakrishnan\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\kparambath\\.nuget\\packages\\": {}
+>>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
+>>>>>>> da1491b2beacc2e2ae72c4e061dfe05c5691a8d2
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+      "projectName": "ProductCatalog.BusinessObject",
+      "projectPath": "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+      "packagesPath": "C:\\Users\\ashaji\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ashaji\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
       "projectUniqueName": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
       "projectName": "ProductCatalog.BusinessObject",
       "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
@@ -6826,6 +6852,20 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lbalakrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+=======
+=======
+      "projectUniqueName": "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+      "projectName": "ProductCatalog.BusinessObject",
+      "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\ProductCatalog.BusinessObject.csproj",
+      "packagesPath": "C:\\Users\\kparambath\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.BusinessObject\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\kparambath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
+>>>>>>> da1491b2beacc2e2ae72c4e061dfe05c5691a8d2
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6839,6 +6879,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+              "projectPath": "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
+            },
+            "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
+              "projectPath": "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj"
+            },
+            "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+              "projectPath": "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
+=======
+<<<<<<< HEAD
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
             "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
               "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
             },
@@ -6847,6 +6901,20 @@
             },
             "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
               "projectPath": "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
+<<<<<<< HEAD
+=======
+=======
+            "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {
+              "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj"
+            },
+            "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj": {
+              "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.EFRepository\\ProductCatalog.EFRepository.csproj"
+            },
+            "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj": {
+              "projectPath": "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.Repository\\ProductCatalog.Repository.csproj"
+>>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
+>>>>>>> da1491b2beacc2e2ae72c4e061dfe05c5691a8d2
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
             }
           }
         }
