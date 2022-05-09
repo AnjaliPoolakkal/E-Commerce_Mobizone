@@ -12,15 +12,15 @@ namespace ProductCatalog.EFRepository
 {
     public class CatalogUserRepository : GenericRepository<User>, ICatalogUserRepository
     {
-        private readonly CatalogDBContext context;
+        private readonly CatalogDBContext _context;
 
-        public CatalogUserRepository(CatalogDBContext context) : base(context)
+        public CatalogUserRepository(CatalogDBContext _context) : base(_context)
         {
-            this.context = context;
+            this._context = _context;
         }
         public async override Task<IEnumerable<User>> GetAll()
         {
-            return await context.User.ToListAsync();
+            return await _context.User.ToListAsync();
         }
     }
 

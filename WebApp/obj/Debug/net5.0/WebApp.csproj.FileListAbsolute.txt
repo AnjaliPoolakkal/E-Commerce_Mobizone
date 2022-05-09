@@ -1028,3 +1028,5 @@ C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\obj\D
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
 >>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\Microsoft.AspNet.Identity.Core.dll

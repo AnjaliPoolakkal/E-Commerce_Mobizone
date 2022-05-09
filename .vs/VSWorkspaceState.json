@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProductCatalog.BusinessObject",
+    "\\ProductCatalog.BusinessObject\\Admin",
+    "\\ProductCatalog.BusinessObject\\Admin\\Authentication",
+    "\\ProductCatalog.Domain",
+    "\\ProductCatalog.Domain\\Role",
+    "\\WebApp",
+    "\\WebApp\\Models",
+    "\\WebApp\\Views",
+    "\\WebApp\\Views\\User"
   ],
-  "SelectedNode": "\\MobiZone.sln",
+  "SelectedNode": "\\ProductCatalog.BusinessObject\\Admin\\CatalogUserBO.cs",
   "PreviewInSolutionExplorer": false
 }

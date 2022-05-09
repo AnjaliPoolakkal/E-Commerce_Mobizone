@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.API.DTO;
+using ProductCatalog.API.Handler;
 using ProductCatalog.BusinessObject.Admin.Authentication;
 using ProductCatalog.Domain.Customers;
 using ProductCatalog.Domain.Role;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ProductCatalog.API.Controllers.Admin
@@ -15,6 +14,7 @@ namespace ProductCatalog.API.Controllers.Admin
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationBO _authenticationBO;
+        Security security;
         public AuthenticationController(IAuthenticationBO authenticationBO)
         {
             _authenticationBO = authenticationBO;
@@ -22,13 +22,15 @@ namespace ProductCatalog.API.Controllers.Admin
         [HttpPost("UserCreate")]
         public async Task<UserDetails> UserCreate([FromBody] UserRegister usersRegister)
         {
+            security = new Security();
             UserDetails userDetail = new UserDetails();
             userDetail.FirstName = usersRegister.FirstName;
             userDetail.LastName = usersRegister.LastName;
             userDetail.Email = usersRegister.Email;
             User user = new User();
             user.UserName = usersRegister.FirstName +" " + usersRegister.LastName;
-            user.Password = usersRegister.PassWord;
+            user.Password = security.Encrypt("thisismysecretkeyforweb", usersRegister.PassWord);
+            //user.Password = security.Decrypt("thisismysecretkeyforweb", usersRegister.PassWord);
             Roles role = new Roles();
             role.UserRole = "User";
             user.Role = role;
