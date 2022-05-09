@@ -26,6 +26,7 @@ namespace WebApp
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ILoginService, LoginService>();
             services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.TopRight; });
 
 

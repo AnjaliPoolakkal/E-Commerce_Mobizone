@@ -12,16 +12,16 @@ namespace ProductCatalog.BusinessObject.Admin
       public class CatalogUserBO : ICatalogUserBO
     
         {
-        private readonly ICatalogUserRepository catalogUserRepository;
+        private readonly ICatalogUserRepository _catalogUserRepository;
 
         public CatalogUserBO(ICatalogUserRepository catalogItemRepository)
         {
-            this.catalogUserRepository = catalogItemRepository;
+            this._catalogUserRepository = catalogItemRepository;
         }
 
         public async Task<IEnumerable<User>> GetUser()
         {
-            return await catalogUserRepository.GetAll();
+            return await _catalogUserRepository.GetAll();
         }
     }
 }
