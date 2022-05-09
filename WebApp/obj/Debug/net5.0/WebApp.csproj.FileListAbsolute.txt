@@ -646,6 +646,7 @@ C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\R
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\LookUp\GetByParentId.cshtml.g.cs
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\LookUp\Index.cshtml.g.cs
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\LookUp\LookUpData.cshtml.g.cs
+C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -660,4 +661,4 @@ C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\W
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\ref\WebApp.dll
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.pdb
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
-C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Login\LogIn.cshtml.g.cs

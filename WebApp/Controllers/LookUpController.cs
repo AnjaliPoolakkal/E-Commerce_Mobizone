@@ -37,7 +37,7 @@ namespace WebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> LookUpData()
         {
-            return View();
+            return  View();
         }
 
         [HttpPost]

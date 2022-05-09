@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace WebApp.Services
 {
-    interface IProductService
+    public interface IProductService
     {
+
     }
 }
