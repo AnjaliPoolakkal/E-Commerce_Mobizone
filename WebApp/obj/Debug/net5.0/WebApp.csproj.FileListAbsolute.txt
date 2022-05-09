@@ -664,6 +664,8 @@ C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\W
 <<<<<<< HEAD
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Login\LogIn.cshtml.g.cs
 =======
+<<<<<<< HEAD
+=======
 C:\Users\apoolakkal\source\Example\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 <<<<<<< HEAD
 C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\messages.json
@@ -850,6 +852,7 @@ C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0
 C:\Users\ashaji\Desktop\EcommerceApp\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
 =======
 <<<<<<< HEAD
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
 C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\messages.json
 C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\appsettings.json
@@ -1032,7 +1035,6 @@ C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\obj\Debug\net5
 C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.pdb
 C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
 C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\User\UserRegistration.cshtml.g.cs
-=======
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\messages.json
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\appsettings.json
@@ -1216,5 +1218,11 @@ C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\obj\D
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\WebApp.genruntimeconfig.cache
 C:\Users\kparambath\source\GitHub\ECommmerce 06\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
 >>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\bin\Debug\net5.0\Microsoft.AspNet.Identity.Core.dll
 >>>>>>> bcf3363f80441c0b48509d443dc16da632409eca
 >>>>>>> da1491b2beacc2e2ae72c4e061dfe05c5691a8d2
+<<<<<<< HEAD
+C:\Users\lbalakrishnan\Desktop\Group 4\E-Commerce_Mobizone\WebApp\obj\Debug\net5.0\Razor\Views\Login\LogIn.cshtml.g.cs
+=======
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605

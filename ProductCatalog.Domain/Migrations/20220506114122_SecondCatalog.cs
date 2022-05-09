@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿/*using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProductCatalog.Domain.Migrations
 {
@@ -15,3 +15,4 @@ namespace ProductCatalog.Domain.Migrations
         }
     }
 }
+*/

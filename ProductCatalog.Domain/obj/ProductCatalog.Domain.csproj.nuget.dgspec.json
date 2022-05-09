@@ -2,6 +2,8 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     "C:\\Users\\ashaji\\Desktop\\EcommerceApp\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {}
   },
   "projects": {
@@ -18,6 +20,7 @@
           "C:\\Users\\ashaji\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
 <<<<<<< HEAD
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
     "C:\\Users\\lbalakrishnan\\Desktop\\Group 4\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {}
   },
   "projects": {
@@ -32,6 +35,8 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lbalakrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+=======
 =======
     "C:\\Users\\kparambath\\source\\GitHub\\ECommmerce 06\\E-Commerce_Mobizone\\ProductCatalog.Domain\\ProductCatalog.Domain.csproj": {}
   },
@@ -49,6 +54,7 @@
           "C:\\Users\\kparambath\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> 8017bc3558f40a7044716b348b1d09cfc2af8c89
 >>>>>>> da1491b2beacc2e2ae72c4e061dfe05c5691a8d2
+>>>>>>> e2b9a7279a5b45c19a8175175f50c3d621697605
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,7 +162,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
