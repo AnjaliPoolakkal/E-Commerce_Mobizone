@@ -8,9 +8,11 @@ namespace WebApp.Services
 {
     public interface IProductService
     {
+
         Task<IEnumerable<Product>> GetProductItemsAsync();
         Task<IEnumerable<Product>> GetProductItemsByIdAsync(int id);
         Task<bool> AddProductItemsAsync(Product item);
         //Task<IEnumerable<Product>> EditProductItemsAsync();
+
     }
 }

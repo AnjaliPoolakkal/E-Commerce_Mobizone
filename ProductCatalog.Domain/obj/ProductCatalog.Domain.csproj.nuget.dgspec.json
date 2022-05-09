@@ -92,6 +92,10 @@
               "target": "Package",
               "version": "[6.17.0, )"
             },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
             "Toaster": {
               "target": "Package",
               "version": "[2.1.10716, )"

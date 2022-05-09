@@ -95,9 +95,9 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
-            "System.IdentityModel.Tokens.Jwt": {
+            "System.Net.Http": {
               "target": "Package",
-              "version": "[6.17.0, )"
+              "version": "[4.3.4, )"
             },
             "Toaster": {
               "target": "Package",
@@ -230,6 +230,10 @@
               "target": "Package",
               "version": "[6.17.0, )"
             },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
             "Toaster": {
               "target": "Package",
               "version": "[2.1.10716, )"
@@ -347,6 +351,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.17.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             },
             "Toaster": {
               "target": "Package",
@@ -474,6 +482,10 @@
               "target": "Package",
               "version": "[6.17.0, )"
             },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
             "Toaster": {
               "target": "Package",
               "version": "[2.1.10716, )"
@@ -595,6 +607,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.17.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             },
             "Toaster": {
               "target": "Package",
@@ -733,6 +749,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.17.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             },
             "Toaster": {
               "target": "Package",
